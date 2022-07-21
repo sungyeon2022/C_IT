@@ -13,28 +13,23 @@
 int main() {
 	int a=0;
 	int b=0;
+	int rs = 0;
 	while (1 == 1) {
 		printf("가위바위보 게임입니다. 가위:1, 바위:2, 보:3 \n");
 		printf("컴퓨터 : ");
 		scanf_s("%d", &a);
 		printf("나 : ");
 		scanf_s("%d", &b);
-		if (a - b == 2) { 
+		rs = a - b;
+		if ((rs == -1)||(rs==2)) {
 			printf("이겼습니다.");
 			break;
 		}
-		else if (a - b == 1) {
+		else if ((rs==1)||(rs==-2)) {
 			printf("패배했습니다.");
 		}
-		else if (a - b == 0) {
+		else (a - b == 0) {
 			printf("비겼습니다.");
-		}
-		else if (a - b == -2) {
-			printf("패배했습니다.");
-		}
-		else if (a - b == -1) {
-			printf("이겼습니다.");
-			break;
 		}
 	}
 }
