@@ -22,14 +22,14 @@ int main() {
 		scanf_s("%d", &b);
 		rs = a - b;
 		if ((rs == -1)||(rs==2)) {
-			printf("이겼습니다.");
+			printf("이겼습니다.\n");
 			break;
 		}
 		else if ((rs==1)||(rs==-2)) {
-			printf("패배했습니다.");
+			printf("패배했습니다.\n");
 		}
-		else (a - b == 0) {
-			printf("비겼습니다.");
+		else {
+			printf("비겼습니다.\n");
 		}
 	}
 }
