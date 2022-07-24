@@ -51,11 +51,13 @@ int main() {
 		}
 		else if (a == 4) {
 			printf("프로그램을 종료하겠습니다.");
+			break;
 		}
 		else {
 			printf("처리할수없는 업무입니다. 다시입력해주세요.\n")
 		}
 	}
+	return 0;
 }
 
 /*
